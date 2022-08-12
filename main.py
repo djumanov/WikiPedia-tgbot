@@ -10,7 +10,7 @@ updater: User = Updater(token=TOKEN)
 
 
 def start(update: Update, context: CallbackContext):
-    update.message.reply_text("Hi")
+    update.message.reply_text(f"Assalomu alaykum, {update.message.from_user.first_name}!\n\nWiki Pedia Botga Hush kelibsiz!!!\nWiki Pediadan qidirish uchun:\n\t```/search something```\nbuyrug'idan foydalaning...")
 
 
 dispatcher = updater.dispatcher
